@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="http://localhost/frontend/style.css">
+    <script src="http://localhost/frontend/script.js"></script>
+    <title>Scheduler</title>
+</head>
+
+<body onload="main()">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <p class="title">
+                Holiday random scheduler
+            </p>
+            <p class="subtitle">
+                
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <div class="block mt-3 ml-3 mr-3 box">
+            <h3 class="title is-4 mt-3 has-text-centered">Add people</h3>
+            <div class="level has-text-centered">
+                <div class="level-item">
+                    <div>
+
+                        <input class="input" id="nameInput" type="text">
+                        <button class="button is-primary mt-3" onClick="addPerson()">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block mt-3 ml-3 mr-3 box">
+            <h3 class="title is-3">People</h3>
+            <ul id="nameList"></ul>
+        </div>
+        
+
+        <div class="box mt-3 ml-3 mr-3">
+            <div id="tableContainer"></div>
+            <br>
+            <div class="level"><button class="level-item button is-primary" onClick="generateNextRow()">Generate next</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
